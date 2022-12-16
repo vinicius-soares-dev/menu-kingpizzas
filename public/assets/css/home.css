@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Poppins:wght@200;300;400;500&display=swap');
+
+:root {
+    --font-main:  'Poppins', sans-serif;
+    --font-secundary: 'Dosis', sans-serif;
+    --color-background: #172026;
+    --color-main: #F2AE30;
+    --color-secundary: #BD2A2E;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+
+.container-pizza {
+    height: 100%;
+    background-color: #172026;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pizza > .imgpizza > img {
+    margin-bottom: 1em;
+    animation: pizzaMove 2s infinite ease-in-out;
+}
+
+.container-pizza > .tittle-container > p {
+    font-family: var(--font-main);
+    color: var(--color-main);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.footer { 
+    position: absolute;
+    bottom: 0;
+}
+
+.footer > .tittle-footer {
+    font-family: var(--font-main);
+    color: var(--color-main);
+    font-size: 0.8em;
+}
+
+.footer > .tittle-footer > mark {
+    background: transparent;
+    color: var(--color-secundary);
+    font-weight: bold;
+}
+
+.main {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: var(--color-main);
+}
+
+.main > .headerMain > img {
+    margin-left: 4em;
+}
+
+.main > .headerMain > .tittle-header {
+    font-family: var(--font-main);
+    color: var(--color-secundary);
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
+
+.main > .headerMain > .description-header {
+    text-align: center;
+    font-family: var(--font-secundary);
+    color: var(--color-background);
+    font-weight: bold;
+}
+
+.main > .menu > .menuOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main > .menu > .menuOptions > .OptionOne {
+    background: var(--color-background);
+    margin: 1em;
+    text-align: center;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.main > .menu > .menuOptions > .OptionOne > .descriptionPizza {
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    color: var(--color-main);
+    text-transform: uppercase;
+}
+
+.main > .menu > .menuOptions > .OptionTwo {
+    background: var(--color-background);
+    margin: 1em;
+    text-align: center;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.main > .menu > .menuOptions > .OptionTwo > .descriptionPizza {
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    color: var(--color-main);
+    text-transform: uppercase;
+}
+
+.main > .menu > .menuOptionsTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main > .menu > .menuOptionsTwo > .OptionThree {
+    background: var(--color-background);
+    margin: 1em;
+    text-align: center;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.main > .menu > .menuOptionsTwo > .OptionFour {
+    background: var(--color-background);
+    margin: 1em;
+    text-align: center;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.main > .menu > .menuOptionsTwo > .OptionThree > .descriptionPizza {
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    color: var(--color-main);
+    text-transform: uppercase;
+}
+
+.main > .menu > .menuOptionsTwo > .OptionFour > .descriptionPizza {
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    color: var(--color-main);
+    text-transform: uppercase;
+}
+
+
+
+
+@keyframes pizzaMove {
+    from {
+        transform: rotateX(180deg);
+    }
+}
